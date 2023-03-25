@@ -1,153 +1,63 @@
 * {
-    color: blueviolet;
+    box-sizing: border-box;
 }
 
-input {
-    border: 0px;
-    border-bottom: 2px solid #d7d7d7;
-    width: 375px;
-    height: 45px;
-    font-size: 16px;
-    background-color: #f5f5f5;
-    }
-    
-.id, .password {
-    width: 400px;
-    height: 40px;
-    margin: 15px 5px 0 45px auto;
-    border: 0px;
-    border-radius: 10px;
-    background-color: whitesmoke;
-    font-size: 16px;
+#header {
+    margin: 0 auto;
+    border-bottom:1px solid rgb(184, 184, 184);
+    margin:0px;
+    padding:0px 200px 0px 200px;
+}
+
+.headname {
+    font-size: 30px;
+    text-align: center;
     font-weight: bold;
 }
 
-.homepage {
-    width: 125px;
-    height: 40px;
-    margin: 15px 5px 0 45px auto;
-    border: 0px;
-    border-radius: 10px;
-    background-color: #CCD1E7;
+#btnwrap {
+    margin: 0 0 0 0;
+    float: right;
+}
+
+.searchbtn {
+    width: 36px;
+    height: 36px;
+    margin: 0px auto;
+    border: 2px solid #CCD1E7;
+    border-radius: 18px;
+    background-color: white;
     font-size: 16px;
     font-weight: bold;
-    animation-name: BtnDown;
-    animation-duration: 0.3s;
-    animation-direction: normal;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-.homepage:hover {
-    animation-name: BtnUp;
-    animation-duration: 0.3s;
-    animation-direction: normal;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    top:0px;
+    left: 0px;
+    background-image: url(search.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
     cursor: pointer;
 }
 
-@keyframes BtnUp {
-    0% {
-        position:relative;
-        top:0px;
-        left: 0px;
-    }
-    100% {
-        position: relative;
-        top: -5px;
-        left: 5px;
-    }
 
-}
-
-@keyframes BtnDown {
-    0% {
-        position:relative;
-        top: -5px;
-        left: 5px;
-    }
-    100% {
-        position: relative;
-        top: 0px;
-        left: 0px;
-    }
-    
-}
-
-.one {
-    text-decoration: none;
-    color: black;
-    width: 125px;
-    height: 40px;
-    margin: 15px 5px 0 45px auto;
-    border: 0px;
-    border-radius: 10px;
-    background-color: #CCD1E7;
+.userbtn {
+    width: 36px;
+    height: 36px;
+    margin: 0px auto;
+    border: 2px solid #CCD1E7;
+    border-radius: 18px;
+    background-color: white;
     font-size: 16px;
     font-weight: bold;
-    animation-name: oneDown;
+    top:0px;
+    left: 0px;
+    background-image: url(sacamoto.jpg);
+    background-repeat: no-repeat;
+    background-size: 36px 36px;
+    cursor: pointer;
 }
 
-.one:hover {
-    background-color: aqua;
-    animation-name: oneUp;
-}
 
-
-@keyframes oneUp {
-    100% {
-        position:relative;
-        top: 0px;
-        left: 0px;
-    }
-    0% {
-        position:relative;
-        top: -5px;
-        left: -5px;
-    }
-}
-
-@keyframes oneDown {
-    100% {
-        position:relative;
-        top: -5px;
-        left: -5px;
-    }
-    0% {
-        position:relative;
-        top: 0px;
-        left: 0px;
-    }
-}
-
-.homepage {
-    text-decoration: none;
-    color: black;
-}
-
-.homepage:link {
-    color: black;
-}
-
-.homepage:visited {
-    color: #ccd1e7;
-}
-
-.homepage:hover {
-    color: purple;
-}
-.on {
-    text-decoration: none;
-    color: black;
-    width: 125px;
-    height: 40px;
-    margin: 15px 5px 0 45px auto;
-    border: 0px;
-    border-radius: 10px;
-    background-color: #CCD1E7;
-    font-size: 16px;
-    font-weight: bold;
-}
-.on:hover {
-    background-color: aqua;
+.container {
+    border-top :1px solid gray;
+    background-color: rgb(243, 243, 243);
+    margin: 0 auto;
 }
