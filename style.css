@@ -11,10 +11,11 @@
     padding:0px 400px 0px 400px;
 }
 #container {
-    width: 680px;
-    height: fit-content;
-    margin: 0px 400px 1000px 400px;
+    width: 1000px;
+    height: 1400px;
+    margin: 0px 0px 1000px 400px;
     background-color: azure;
+    border-right:1px solid rgb(184, 184, 184);
 }
 .headname {
     font-size: 40px;
@@ -71,4 +72,16 @@
     border-top :1px solid gray;
     background-color: rgb(243, 243, 243);
     margin: 0 auto;
+}
+#clearification {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left: 1450px;
+}
+
+.writing {
+    width: 250px;
+    height: 400px;
 }
