@@ -2,6 +2,7 @@
     font-family: 'Nanum Myeongjo', serif;
     /* font-family: 'Noto Sans KR', sans-serif; */
     box-sizing: border-box;   
+
 }
 
 #header {
@@ -102,6 +103,49 @@
     background-position-y: -50px;    
 }
 
+.image1 {
+    background-image: url("./크아.jpg");
+    width:200px;
+    height:100px;
+    position: relative;
+    background-size: 200px 200px;
+    background-position-y: -50px;    
+}
+.image2 {
+    background-image: url("./멋사.png");
+    width:200px;
+    height:100px;
+    position: relative;
+    background-size: 200px 200px;
+    background-position-y: -50px;    
+}
+
+.image3 {
+    background-image: url("./라인.jpg");
+    width:200px;
+    height:100px;
+    position: relative;
+    background-size: 200px 200px;
+    background-position-y: -50px;    
+}
+
+.image4 {
+    background-image: url("깃.png");
+    width:200px;
+    height:100px;
+    position: relative;
+    background-size: 200px 200px;
+    background-position-y: -50px;    
+}
+
+.image5 {
+    background-image: url("이문세.jpg");
+    width:200px;
+    height:100px;
+    position: relative;
+    background-size: 200px 200px;
+    background-position-y: -50px;    
+}
 .image7 {
     background-image: url("./입장식.png");
     width:200px;
