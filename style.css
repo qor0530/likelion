@@ -11,10 +11,14 @@
     padding:0px 400px 0px 400px;
 }
 #container {
-    width: 680px;
-    height: fit-content;
-    margin: 0px 400px 1000px 400px;
+    margin: 0px 0px 0px 400px;
+    border-right:1px solid rgb(184, 184, 184);
+    width: 800px;
+    height: 1200px;
+}
 
+#footer {
+    border-top:1px solid rgb(184, 184, 184);
 }
 .headname {
     font-size: 40px;
@@ -68,20 +72,6 @@
         font-family: 'Noto Sans KR', sans-serif;
 }
 
-.container {
-    border-top :1px solid gray;
-    background-color: rgb(243, 243, 243);
-
-}
-
-.leftcontainer {
-    margin-top: 45px;
-}
-
-.rightcontainer {
-
-}
-
 
 .choicebtn {
     color: black;
@@ -99,6 +89,10 @@
     cursor: pointer;
 }
 
+.writing {
+    width: 200px;
+}
+
 .image {
     background-image: url("./pic1.png");
     width:200px;
@@ -108,12 +102,44 @@
     background-position-y: -50px;    
 }
 
+.image7 {
+    background-image: url("./입장식.png");
+    width:200px;
+    height:100px;
+    position: relative;
+    background-size: 200px 200px;
+    background-position-y: -50px;    
+}
+
+.image8 {
+    background-image: url("./스즈메.jpg");
+    width:200px;
+    height:100px;
+    position: relative;
+    background-size: 200px 200px;
+    background-position-y: -50px;    
+}
+
+
+
 .wtitie {
+    width: 200px;
     font-size: 20px;
 }
 
-.text {
-    width: 100px;
-    height: 50px;
+.context {
+    width: 200px;
+    height: 150px;
     color: gray;
+    text-overflow: clip;
 }
+
+.articles {
+    width: 800px;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    gap:60px;
+}
+
