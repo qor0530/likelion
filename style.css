@@ -1,16 +1,23 @@
 * {
+    font-family: 'Nanum Myeongjo', serif;
+    /* font-family: 'Noto Sans KR', sans-serif; */
     box-sizing: border-box;
 }
 
 #header {
     margin: 0 auto;
     border-bottom:1px solid rgb(184, 184, 184);
-    margin:0px;
-    padding:0px 200px 0px 200px;
+    margin:20px 0px 0px 0px;
+    padding:0px 400px 0px 400px;
 }
-
+#container {
+    width: 680px;
+    height: fit-content;
+    margin: 0px 400px 1000px 400px;
+    background-color: azure;
+}
 .headname {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     font-weight: bold;
 }
@@ -34,6 +41,7 @@
     background-image: url(search.png);
     background-repeat: no-repeat;
     background-position: 50%;
+    background-size: 30px 30px;
     cursor: pointer;
 }
 
@@ -55,6 +63,9 @@
     cursor: pointer;
 }
 
+.menuwrap {
+        font-family: 'Noto Sans KR', sans-serif;
+}
 
 .container {
     border-top :1px solid gray;
