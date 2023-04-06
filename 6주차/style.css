@@ -2,12 +2,160 @@ body, html{
     padding: 0;
     margin: 0;
 
-    overflow: hidden;
+    /* div 박스 밖으로 나간 부분을 안보이게 해줌. */
+    overflow: hidden; 
 }
 div{
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 .page1{
+    /* 창을 줄여도 페이지의 값을 유지할 수 있다. */
+    width: 100vw;
+    height: 100vh;
+    /* 디바이스 종류마다 픽셀값을 다르게 해준다. */
+    padding: 1rem 3rem;
+}
+.content{
+    position: relative;
+
+    width: 300px;
+    height: 300px;
+
+    background-image: url("./img/emergency.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.emergencyBtn{
+    /* 앱솔루트의 기준은 부모 중 position이 static이 아닌 */
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-color: red;
+    
+    border: 3px solid black;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+
+.traffic{
+    position: relative;
+    display: flex;
+}
+
+.trafficLight{
+    width: 500px;
+    height: 150px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: gray;
+    border-radius: 30px;
+}
+
+.light{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.red{
+    background-color: red;
+    opacity: 10%;
+}
+
+
+.green{
+    background-color: green;
+    opacity: 10%;
+}
+
+.yellow{
+    background-color: yellow;
+    opacity: 10%;
+}
+.lightActive{
+    opacity: 100%;
+}
+.trafficBtn{
+    width: 120px;
+    height: 40px;
+    margin-left: 1rem;
+
+    border: 3px solid orange;
+    border-radius: 30px;
+
+    background-color: white;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 900;
+}
+
+.step3{
+    position: fixed;
+    bottom: 80px;
+    width: 100vw;
+}
+.hiddenSliderBtn{
+    visibility: hidden;
+}
+
+.pageSliderBtn{
+    width: 120px;
+    height: 40px;
+    margin-left: 1rem;
+
+    border: 3px solid orange;
+    border-radius: 30px;
+
+    background-color: white;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 900;
+}
+
+.pageSliderBtn:hover{
+    background-color: orange;
+    color: white;
+}
+
+.nxtSliderBtn{
+    position: absolute;
+}
+
+.preSliderBtn{
+    position: absolute;
+    left: 100px;
+}
+
+.wrap{
+    width: fit-content;
+    display: flex;
+
+    transition: transform 0.5s ease-in-out;
+}
+
+.page2{
     width: 100vw;
     height: 100vh;
     padding: 1rem 3rem;
