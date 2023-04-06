@@ -57,19 +57,22 @@ nextpageBtn.addEventListener('click', ()=>{
 
 let count = 1; 
 
+const isChecked = false
 function changeImage() {
-    if (isClicked()){
+    // if (isChecked){
         const slime = document.querySelector(".slimeAnime");
         count = count % 4 + 1;
         slime.style.backgroundImage = `url("./img/slime/슬라임${count}.png")`;
-    }
+    // }
 }
 
 setInterval(changeImage, 100);
 
 const checkbox = document.querySelector('my_checkbox');
 
-
+function changebool(){
+    isChecked = !isChecked
+}
 const backpageBtn = document.querySelector(".backpageBtn")
 
 backpageBtn.addEventListener('click', ()=>{
