@@ -5,18 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>멋쟁이사자처럼 JS과제</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
 </head>
-<body>
-    <div>
-        <h1>STEP1</h1>
-        <div class="dontTouchBtn">버블링</div>
-        <h1>STEP2</h1>
-        <span class="traffic_light">
-            <span class="green"></span>
-            <span class="yellow"></span>
-            <span class="red"></span>
-        </span>
-        <button></button>
+<body style="overflow:hidden;">
+    <div class="wrap">
+        <div class="page1">
+            <h1>STEP 1</h1>
+            <div class="dontTouchBtn">
+                <div class="bubbleBtn">버블링</div>
+            </div>
+            <h1>STEP 2</h1>
+            <div class="traffic_light">
+                <div class="green"></div>
+                <div class="yellow"></div>
+                <div class="red"></div>
+            </div>
+            <button class="changeBtn" onclick="changeLight()">신호 바꾸기</button>
+            <button class="nextpageBtn">다음페이지 ></button>
+        </div>
+        <div class="page2">
+            <h1>STEP 3</h1>
+            <input type="checkbox" class="my_checkbox"> 움직임 활성화
+            <div class="box1">
+                <div class="slimeAnime"></div>
+            </div>
+            <button class="backpageBtn">이전페이지</button>
+        </div>
     </div>
 </body>
 </html>
