@@ -3,27 +3,38 @@ body, html{
     margin: 0;
 
     /* div 박스 밖으로 나간 부분을 안보이게 해줌. */
-    overflow: hidden; 
+    /* overflow: hidden;  */
 }
 
 div{
     box-sizing: border-box; 
 }
+.logo{
+
+}
 
 .menu{
+    margin-top: 27px;
+    margin-left: 30px;
     display: flex;
 }
 
 .menu_list{
     display: flex;
-    justify-content: space-between;  
-    padding-left: 100px;
+    gap: 5px; 
+    margin-left: 120px;
 }
+
+.menu_list:hover{
+    cursor: pointer;
+}
+
 .link_list{
     display: flex;
     justify-content: space-between;  
-    padding-right: 100px;
-    text-align: right;
+    margin-right: 100px;
+    margin-left: auto;
+    float: right;
 }
 
 .l_item{
@@ -37,6 +48,10 @@ div{
     font-size: small;
 }
 
+.l_item:hover{
+    border-bottom :4px solid gray;
+}
+
 .r_item{
     display: block;
     padding: 10px;
@@ -48,7 +63,25 @@ div{
     font-size: small;
 }
 
+.r_item:hover{
+    cursor: pointer;
+}
 
-.link{
+.link1{
+    display: relative;
+}
+.link2{
+}
+.link3{
+}
 
+.downloadBox1{
+    /* display: none; */
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid gray;
+    top: 6%;
+    left:
 }
