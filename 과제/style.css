@@ -3,20 +3,33 @@ body, html{
     margin: 0;
 
     /* div 박스 밖으로 나간 부분을 안보이게 해줌. */
-    /* overflow: hidden;  */
+    overflow: hidden; 
 }
 
 div{
     box-sizing: border-box; 
 }
+video{
+    position: absolute;
+    z-index: -1;
+}
 .logo{
-
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu{
-    margin-top: 27px;
+    margin-top: 30px;
     margin-left: 30px;
     display: flex;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu_list{
@@ -43,13 +56,29 @@ div{
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    color: #333;
+    color: white;
     text-decoration: none;
     font-size: small;
 }
 
-.l_item:hover{
-    border-bottom :4px solid gray;
+.underline {
+  position: absolute;
+  background-color: white;
+  transition: width 0.2s, left 0.2s;
+  top: 6.5%;
+  left: 20%;
+  height: 3px;
+}
+
+.underline.show {
+  opacity: 1;
+  display: block;
+}
+
+
+.underline.hide {
+opacity: 0;
+display: block;
 }
 
 .r_item{
@@ -58,12 +87,13 @@ div{
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    color: #333;
+    color: white;
     text-decoration: none;
     font-size: small;
 }
 
 .r_item:hover{
+    color: gray;
     cursor: pointer;
 }
 
@@ -71,17 +101,131 @@ div{
     display: relative;
 }
 .link2{
+    display: relative;
 }
 .link3{
+    display: relative;
 }
 
 .downloadBox1{
-    /* display: none; */
+    display: none;
     position: absolute;
+    color: white;
     width: 100px;
-    height: 150px;
-    background-color: white;
+    height: 80px;
+    background-color: black;
     border: 1px solid gray;
+    border-top: 2px solid white;
     top: 6%;
-    left:
+    font-size: 11px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.downloadBox1.show {
+    opacity: 1;
+    display: block;
+  }
+
+
+.downloadBox1.hide {
+  opacity: 0;
+  display: block;
+  animation: fadeOut 0.5s ease-in-out;
+}
+
+.downloadBox2{
+    display: none;
+    position: absolute;
+    color: white;
+    width: 100px;
+    height: 80px;
+    background-color: black;
+    border: 1px solid gray;
+    border-top: 2px solid white;
+    top: 6%;
+    font-size: 11px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.downloadBox2.show { 
+    opacity: 1;
+    display: block;
+  }
+
+.downloadBox2.hide {
+  opacity: 0;
+  display: block;
+  animation: fadeOut 0.5s ease-in-out;
+}
+.downloadBox3{
+    display: none;
+    position: absolute;
+    color: white;
+    width: 100px;
+    height: 80px;
+    background-color: black;
+    border: 1px solid gray;
+    border-top: 2px solid white;
+    top: 6%;
+    font-size: 11px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.downloadBox3.show { 
+    opacity: 1;
+    display: block;
+}
+
+.downloadBox3.hide {
+  opacity: 0;
+  display: block;
+  animation: fadeOut 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.main{
+  position: absolute;
+  top: 27%;
+  left: 17%;
+  color: white;
+}
+
+.title{
+  font-size: 75px;
+  font-weight:bold;
+}
+.description{
+  font-weight:bold;
+}
+.downloadBtn{
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: 0;
+}
+.downloadBtn:hover{
+  cursor: pointer;
+}
+img {
+  filter: invert(100%) sepia(67%) saturate(13%) hue-rotate(242deg) brightness(103%) contrast(104%);
 }

@@ -1,15 +1,77 @@
+const texts = document.querySelectorAll(".l_item");
+const underline = document.querySelector(".underline");
+const menu_list = document.querySelector(".menu_list");
+texts.forEach((text) => {
+  text.addEventListener("mouseenter", () => {
+    const textWidth = text.clientWidth;
+    const textLeft = text.offsetLeft;
+    underline.style.width = `${textWidth}px`;
+    underline.style.left = `${textLeft}px`;
+  });
+});
+
+menu_list.addEventListener('mouseover', ()=>{
+    underline.classList.remove("hide")
+    underline.classList.add("show")
+})
+menu_list.addEventListener('mouseout', ()=>{
+    underline.classList.remove("show")
+    underline.classList.add("hide")
+})
+
+
+
 const link1 = document.querySelector(".link1")
 const box1 = document.querySelector(".downloadBox1")
-// link1.addEventListener('mouseover', ()=>{
-//     box1.style.display = 'block';
-// })
-// link1.addEventListener('mouseout', ()=>{
-//     box1.style.display = 'none';
-// })
+link1.addEventListener('mouseover', ()=>{
+    box1.classList.remove("hide")
+    box1.classList.add("show")
+})
+link1.addEventListener('mouseout', ()=>{
+    box1.classList.remove("show")
+    box1.classList.add("hide")
+})
 
-// 1번 과제
-// 호버링이 변경시 애니메이션을 이용하여 이동을 매끄럽게 표현, 메뉴 전체의 호버링이 종료시 바를 비활성화
-// 2번 과제
-// 호버링시 display:none이었던 회색박스를 absolute로 부모의 자리에서 나오게 할려함
-// 안됨 -> 이유: 부모의 text상자 안에서 절대좌표를 조종하는 것이기에 했는데...? 뭔가 안맞았음.왜?
-// display의 스타일을 absolute해버렸음... block으로 바꾸니 잘 작동함
+const link2 = document.querySelector(".link2")
+const box2 = document.querySelector(".downloadBox2")
+link2.addEventListener('mouseover', ()=>{
+    box2.classList.remove("hide");
+    box2.classList.add("show");
+})
+link2.addEventListener('mouseout', ()=>{
+    box2.classList.remove("show");
+    box2.classList.add("hide");
+})
+
+const link3 = document.querySelector(".link3")
+const box3 = document.querySelector(".downloadBox3")
+const language = document.querySelector(".language")
+function changeText(element, isOn) {
+    if (isOn){
+        element.textContent = "KOR ▲";
+    }
+    else{
+        element.textContent = "KOR ▼";
+    }
+  }
+
+link3.addEventListener('mouseover', ()=>{
+    box3.classList.remove("hide");
+    box3.classList.add("show");
+    // changeText(language, true);
+})
+link3.addEventListener('mouseout', ()=>{
+    box3.classList.remove("show");
+    box3.classList.add("hide");
+    // changeText(language, false);
+})
+
+
+// 오른쪽 상단
+// 박스를 absolute로 상속시켜서 중앙정렬이 안됨.
+// 중간 글자들이 세로로 중앙 정렬이 안되서 불편함.
+// 박스안에 글자들은 각각이 요소로 지정되있지 않음. 
+// 이외 아쉬운 점들
+// 기존의 타이틀은 글자를 2개로 나눠서 사용했음 난 하나(귀찬흠)
+// 
+// 
