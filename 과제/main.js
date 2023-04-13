@@ -45,25 +45,32 @@ link2.addEventListener('mouseout', ()=>{
 
 const link3 = document.querySelector(".link3")
 const box3 = document.querySelector(".downloadBox3")
-const language = document.querySelector(".language")
-function changeText(element, isOn) {
-    if (isOn){
-        element.textContent = "KOR ▲";
-    }
-    else{
-        element.textContent = "KOR ▼";
-    }
-  }
+// const language = document.querySelector(".language")
+// function changeText(element, isOn) {
+//     if (isOn){
+//         element.innerText = "KOR ▲";
+//     }
+//     else{
+//         element.innerText = "KOR ▼";
+//     }
+// }
+// language.addEventListener('mouseover', ()=>{
+//     language.innerText = "KOR ▲";
+// })
+
+// language.addEventListener('mouseout', ()=>{
+//     language.innerText = "KOR ▼";
+// })
+
+
 
 link3.addEventListener('mouseover', ()=>{
     box3.classList.remove("hide");
     box3.classList.add("show");
-    // changeText(language, true);
 })
 link3.addEventListener('mouseout', ()=>{
     box3.classList.remove("show");
     box3.classList.add("hide");
-    // changeText(language, false);
 })
 
 
@@ -71,7 +78,7 @@ link3.addEventListener('mouseout', ()=>{
 // 박스를 absolute로 상속시켜서 중앙정렬이 안됨.
 // 중간 글자들이 세로로 중앙 정렬이 안되서 불편함.
 // 박스안에 글자들은 각각이 요소로 지정되있지 않음. 
+// 세모가 안뒤집어짐
+
 // 이외 아쉬운 점들
 // 기존의 타이틀은 글자를 2개로 나눠서 사용했음 난 하나(귀찬흠)
-// 
-// 

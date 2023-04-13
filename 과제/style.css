@@ -44,10 +44,12 @@ video{
 
 .link_list{
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-around;  
     margin-right: 100px;
     margin-left: auto;
     float: right;
+    justify-content: center;
+    align-items: center;
 }
 
 .l_item{
