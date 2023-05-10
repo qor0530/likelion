@@ -140,7 +140,7 @@ display: block;
     position: absolute;
     color: white;
     width: 100px;
-    height: 80px;
+    height: 35px;
     background-color: black;
     border: 1px solid gray;
     border-top: 2px solid white;
@@ -164,7 +164,7 @@ display: block;
     position: absolute;
     color: white;
     width: 100px;
-    height: 80px;
+    height: 55px;
     background-color: black;
     border: 1px solid gray;
     border-top: 2px solid white;
@@ -224,9 +224,11 @@ display: block;
   color: white;
   font-weight: bold;
   border: 0;
+  transition: background-color 0.5s ease-in-out;
 }
 .downloadBtn:hover{
   cursor: pointer;
+  background-color: #cc0000;
 }
 img {
   filter: invert(100%) sepia(67%) saturate(13%) hue-rotate(242deg) brightness(103%) contrast(104%);
